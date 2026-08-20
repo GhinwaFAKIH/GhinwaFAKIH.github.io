@@ -224,124 +224,193 @@
 <section id="projects" class="section">
 
     <div class="section-label">
-        03 / Projects
+        05 / Projects
     </div>
 
     <h2>
-        Research meets AI.
+        Selected projects.
     </h2>
 
-    <div class="projects">
 
+    <!-- PROJECT 01 -->
 
-        <article class="project">
+    <div class="project">
 
-            <div class="project-number">
-                01 · LLM / RAG
-            </div>
+        <span>01</span>
 
-            <div>
+        <div>
 
-                <h3>
-                    Research Paper Chatbot
-                </h3>
+            <h3>
+                SHARP — Hybrid SPARQL Query Relaxation
+            </h3>
 
-                <p>
-                    A Retrieval-Augmented Generation application for
-                    interacting with research papers using document
-                    retrieval and Large Language Models.
-                </p>
+            <p class="project-meta">
+                Knowledge Graphs · Semantic Web · Ontology Reasoning · Embeddings
+            </p>
 
-                <div class="tags">
-                    <span>Python</span>
-                    <span>RAG</span>
-                    <span>LangChain</span>
-                    <span>Streamlit</span>
-                </div>
+            <p>
+                A hybrid framework for relaxing SPARQL queries when exact
+                queries return no results. SHARP combines ontology-based
+                reasoning with instance-level semantic similarity to generate
+                and rank relevant relaxed queries.
+            </p>
 
-                <a
-                    href="https://github.com/GhinwaFAKIH/Research-Paper-Chatbot-RAG-"
-                    target="_blank"
-                    class="project-link">
+            <p>
+                The project introduces a ranking strategy and an evaluation
+                benchmark incorporating human judgement to assess the relevance
+                of relaxed answers.
+            </p>
 
-                    View on GitHub ↗
+            <div class="project-links">
 
+                <a href="https://github.com/GhinwaFAKIH/SHARP-SPARQL-Hybrid-Query-Relaxation-Approach"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Publication →
                 </a>
 
             </div>
 
-        </article>
+        </div>
+
+    </div>
 
 
+    <!-- PROJECT 02 -->
 
-        <article class="project">
+    <div class="project">
 
-            <div class="project-number">
-                02 · Semantic Web
-            </div>
+        <span>02</span>
 
-            <div>
+        <div>
 
-                <h3>
-                    SPARQL Relaxation Research
-                </h3>
+            <h3>
+                RELAXBench — Benchmark for SPARQL Query Relaxation
+            </h3>
 
-                <p>
-                    Research and experimentation around relaxed querying,
-                    RDF reification and semantic similarity.
-                </p>
+            <p class="project-meta">
+                Knowledge Graphs · RDF-Star · SPARQL · Benchmarking · Evaluation
+            </p>
 
-                <div class="tags">
-                    <span>SPARQL</span>
-                    <span>Apache Jena</span>
-                    <span>Virtuoso</span>
-                    <span>RDF</span>
-                </div>
+            <p>
+                A benchmark designed to evaluate SPARQL query relaxation in
+                knowledge graphs containing reified statements. RELAXBench
+                extends LUBM4OBDA with RDF-Star data and queries specifically
+                designed to test relaxation strategies.
+            </p>
 
-                <a
-                    href="https://github.com/GhinwaFAKIH/SHARP-SPARQL-Hybrid-Query-Relaxation-Approach"
-                    target="_blank"
-                    class="project-link">
+            <p>
+                The benchmark supports systematic evaluation of query
+                rewriting, semantic similarity and ranking quality using
+                metrics such as Precision, Recall, Jaccard, NDCG and RBO.
+            </p>
 
-                    View on GitHub ↗
+            <div class="project-links">
 
+                <a href="https://doi.org/10.5281/zenodo.20812939"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub →
                 </a>
-            </div>
-
-        </article>
-
-
-
-        <article class="project">
-
-            <div class="project-number">
-                03 · CV job matcher
-            </div>
-
-            <div>
-
-                <h3>
-                    LLM & NLP Experiments
-                </h3>
-
-                <p>
-                    Experiments with transformers, embeddings,
-                    NLP pipelines and local language models.
-                </p>
-
-                <div class="tags">
-                    <span>LLMs</span>
-                    <span>Transformers</span>
-                    <span>Python</span>
-                </div>
 
             </div>
 
-        </article>
+        </div>
+
+    </div>
+
+
+    <!-- PROJECT 03 -->
+
+    <div class="project">
+
+        <span>03</span>
+
+        <div>
+
+            <h3>
+                Research Paper Chatbot — RAG
+            </h3>
+
+            <p class="project-meta">
+                LLMs · RAG · LangChain · Chroma · Embeddings · Python
+            </p>
+
+            <p>
+                An interactive question-answering system that allows users
+                to upload and query research papers using Retrieval-Augmented
+                Generation (RAG).
+            </p>
+
+            <p>
+                The application extracts and chunks documents, generates
+                semantic embeddings, stores them in a vector database, and
+                retrieves relevant passages before generating answers with
+                a language model.
+            </p>
+
+            <div class="project-links">
+
+                <a href="https://github.com/GhinwaFAKIH/Research-Paper-Chatbot-RAG-"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROJECT 04 -->
+
+    <div class="project">
+
+        <span>04</span>
+
+        <div>
+
+            <h3>
+                AI CV & Job Matching System
+            </h3>
+
+            <p class="project-meta">
+                NLP · LLMs · Semantic Matching · Embeddings · Python
+            </p>
+
+            <p>
+                An AI-powered system designed to compare a candidate's CV
+                with job descriptions and identify the most relevant
+                opportunities.
+            </p>
+
+            <p>
+                The project uses NLP and semantic embeddings to extract
+                skills, experience and requirements, calculate similarity
+                between candidate profiles and job descriptions, and rank
+                opportunities according to their relevance.
+            </p>
+
+            <div class="project-links">
+
+                <a href="https://github.com/GhinwaFAKIH/cv-job-matcher"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub →
+                </a>
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
+
+  
+
 
 <!-- PUBLICATIONS -->
 
