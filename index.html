@@ -5,38 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Ginwa Fakih — PhD in Computer Science, AI, Knowledge Graphs, Semantic Web and NLP">
+          content="Ginwa Fakih — PhD in Computer Science, AI, Knowledge Graphs, Semantic Web, NLP and LLM/RAG">
 
-    <title>Ginwa Fakih | PhD in Computer Science</title>
+    <meta name="author" content="Ginwa Fakih">
+
+    <title>Ginwa Fakih | PhD in Computer Science · AI & Data</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header class="site-header">
     <nav class="navbar">
-        <a href="#home" class="logo">GF<span>.</span></a>
+
+        <a href="#home" class="logo" aria-label="Ginwa Fakih home">
+            GF<span>.</span>
+        </a>
 
         <div class="nav-links">
+
             <a href="#about">About</a>
             <a href="#research">Research</a>
             <a href="#projects">Projects</a>
             <a href="#publications">Publications</a>
             <a href="#teaching">Teaching</a>
             <a href="#contact">Contact</a>
+
         </div>
+
     </nav>
 </header>
 
 
 <main>
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section id="home" class="hero">
 
-    <div class="hero-text">
+    <!-- Animated AI background -->
+    <canvas id="ai-network" aria-hidden="true"></canvas>
+
+    <!-- Mouse-following glow -->
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+
+    <div class="hero-text reveal">
 
         <p class="eyebrow">
             PhD in Computer Science · AI & Data
@@ -57,32 +78,40 @@
             intelligence.
         </p>
 
+
         <div class="buttons">
 
-            <a href="#projects" class="button primary">
+            <a href="#projects"
+               class="button primary">
                 View my work
             </a>
 
             <a href="assets/Ginwa-Fakih-CV.pdf"
                class="button secondary"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
                 Download CV
             </a>
 
         </div>
 
+
         <div class="socials">
 
             <a href="https://github.com/GinwaFAKIH"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
                 GitHub ↗
             </a>
 
+            <!-- Replace with your real LinkedIn URL -->
             <a href="YOUR_LINKEDIN_URL"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
                 LinkedIn ↗
             </a>
 
+            <!-- Replace with your real email -->
             <a href="mailto:YOUR_EMAIL">
                 Email ↗
             </a>
@@ -92,15 +121,28 @@
     </div>
 
 
-    <div class="profile-card">
+    <!-- Profile -->
+
+    <div class="profile-card reveal">
 
         <div class="profile-placeholder">
-            <img src="images/profile.png" alt="Ginwa Fakih">
+
+            <img
+                src="images/profile.png"
+                alt="Ginwa Fakih"
+                loading="eager"
+            >
+
         </div>
 
         <div class="profile-caption">
+
             <strong>Computer Science</strong>
-            <span>Research · Engineering · AI</span>
+
+            <span>
+                Research · Engineering · AI
+            </span>
+
         </div>
 
     </div>
@@ -109,13 +151,16 @@
 
 
 
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT
+========================= -->
 
-<section id="about" class="section">
+<section id="about" class="section reveal">
 
     <div class="section-label">
         01 / About
     </div>
+
 
     <div class="two-column">
 
@@ -123,6 +168,7 @@
             Researcher<br>
             who builds.
         </h2>
+
 
         <div>
 
@@ -153,9 +199,11 @@
 
 
 
-<!-- RESEARCH -->
+<!-- =========================
+     RESEARCH
+========================= -->
 
-<section id="research" class="section grey">
+<section id="research" class="section grey reveal">
 
     <div class="section-label">
         02 / Research
@@ -169,10 +217,13 @@
 
     <div class="cards">
 
+        <!-- Research 01 -->
 
-        <article class="card">
+        <article class="card reveal">
 
-            <span class="number">01</span>
+            <span class="number">
+                01
+            </span>
 
             <h3>
                 SHARP
@@ -184,17 +235,23 @@
             </p>
 
             <div class="tags">
+
                 <span>Knowledge Graphs</span>
                 <span>Embeddings</span>
                 <span>Semantic Web</span>
+
             </div>
 
         </article>
 
 
-        <article class="card">
+        <!-- Research 02 -->
 
-            <span class="number">02</span>
+        <article class="card reveal">
+
+            <span class="number">
+                02
+            </span>
 
             <h3>
                 RELAXBench
@@ -206,9 +263,11 @@
             </p>
 
             <div class="tags">
+
                 <span>Benchmark</span>
                 <span>RDF-Star</span>
                 <span>Evaluation</span>
+
             </div>
 
         </article>
@@ -219,12 +278,14 @@
 
 
 
-<!-- PROJECTS -->
+<!-- =========================
+     PROJECTS
+========================= -->
 
-<section id="projects" class="section">
+<section id="projects" class="section reveal">
 
     <div class="section-label">
-        05 / Projects
+        03 / Projects
     </div>
 
     <h2>
@@ -234,9 +295,12 @@
 
     <!-- PROJECT 01 -->
 
-    <div class="project">
+    <article class="project project-card reveal">
 
-        <span>01</span>
+        <span class="project-number">
+            01
+        </span>
+
 
         <div>
 
@@ -261,26 +325,34 @@
                 of relaxed answers.
             </p>
 
+
             <div class="project-links">
 
-                <a href="https://github.com/GhinwaFAKIH/SHARP-SPARQL-Hybrid-Query-Relaxation-Approach"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                <a
+                    href="https://github.com/GhinwaFAKIH/SHARP-SPARQL-Hybrid-Query-Relaxation-Approach"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
                     Publication →
+
                 </a>
 
             </div>
 
         </div>
 
-    </div>
+    </article>
+
 
 
     <!-- PROJECT 02 -->
 
-    <div class="project">
+    <article class="project project-card reveal">
 
-        <span>02</span>
+        <span class="project-number">
+            02
+        </span>
+
 
         <div>
 
@@ -305,26 +377,34 @@
                 metrics such as Precision, Recall, Jaccard, NDCG and RBO.
             </p>
 
+
             <div class="project-links">
 
-                <a href="https://doi.org/10.5281/zenodo.20812939"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub →
+                <a
+                    href="https://doi.org/10.5281/zenodo.20812939"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Project →
+
                 </a>
 
             </div>
 
         </div>
 
-    </div>
+    </article>
+
 
 
     <!-- PROJECT 03 -->
 
-    <div class="project">
+    <article class="project project-card reveal">
 
-        <span>03</span>
+        <span class="project-number">
+            03
+        </span>
+
 
         <div>
 
@@ -349,26 +429,34 @@
                 a language model.
             </p>
 
+
             <div class="project-links">
 
-                <a href="https://github.com/GhinwaFAKIH/Research-Paper-Chatbot-RAG-"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                <a
+                    href="https://github.com/GhinwaFAKIH/Research-Paper-Chatbot-RAG-"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
                     GitHub →
+
                 </a>
 
             </div>
 
         </div>
 
-    </div>
+    </article>
+
 
 
     <!-- PROJECT 04 -->
 
-    <div class="project">
+    <article class="project project-card reveal">
 
-        <span>04</span>
+        <span class="project-number">
+            04
+        </span>
+
 
         <div>
 
@@ -393,28 +481,33 @@
                 opportunities according to their relevance.
             </p>
 
+
             <div class="project-links">
 
-                <a href="https://github.com/GhinwaFAKIH/cv-job-matcher"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                <a
+                    href="https://github.com/GhinwaFAKIH/cv-job-matcher"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
                     GitHub →
+
                 </a>
 
             </div>
 
         </div>
 
-    </div>
+    </article>
 
 </section>
 
-  
 
 
-<!-- PUBLICATIONS -->
+<!-- =========================
+     PUBLICATIONS
+========================= -->
 
-<section id="publications" class="section grey">
+<section id="publications" class="section grey reveal">
 
     <div class="section-label">
         04 / Publications
@@ -425,11 +518,14 @@
     </h2>
 
 
-    <!-- Publication 01 -->
+    <!-- PUBLICATION 01 -->
 
-    <div class="publication">
+    <article class="publication reveal">
 
-        <span>01</span>
+        <span class="publication-number">
+            01
+        </span>
+
 
         <div>
 
@@ -438,11 +534,16 @@
             </h3>
 
             <p>
-                <strong>G. Fakih, P. Serrano-Alvarado</strong>
+                <strong>
+                    G. Fakih, P. Serrano-Alvarado
+                </strong>
             </p>
 
             <p>
-                <em>Semantic Web</em>, 15(6), 2507–2554, 2024.
+                <em>
+                    Semantic Web
+                </em>,
+                15(6), 2507–2554, 2024.
             </p>
 
             <p>
@@ -451,22 +552,29 @@
                 query answering.
             </p>
 
-            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=M55IkjEAAAAJ&citation_for_view=M55IkjEAAAAJ:u-x6o8ySG0sC"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+                href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=M55IkjEAAAAJ&citation_for_view=M55IkjEAAAAJ:u-x6o8ySG0sC"
+                target="_blank"
+                rel="noopener noreferrer">
+
                 Google Scholar →
+
             </a>
 
         </div>
 
-    </div>
+    </article>
 
 
-    <!-- Publication 02 -->
 
-    <div class="publication">
+    <!-- PUBLICATION 02 -->
 
-        <span>02</span>
+    <article class="publication reveal">
+
+        <span class="publication-number">
+            02
+        </span>
+
 
         <div>
 
@@ -475,12 +583,17 @@
             </h3>
 
             <p>
-                <strong>G. Fakih, P. Serrano-Alvarado, M. Perrin</strong>
+                <strong>
+                    G. Fakih, P. Serrano-Alvarado, M. Perrin
+                </strong>
             </p>
 
             <p>
-                <em>21st International Conference on Semantic Systems
-                (SEMANTiCS)</em>, Vienna, 2025.
+                <em>
+                    21st International Conference on Semantic Systems
+                    (SEMANTiCS)
+                </em>,
+                Vienna, 2025.
             </p>
 
             <p>
@@ -493,36 +606,49 @@
                 ★ Nominated for the Best Student Paper Award
             </p>
 
-            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=M55IkjEAAAAJ&citation_for_view=M55IkjEAAAAJ:2osOgNQ5qMEC"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+                href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=M55IkjEAAAAJ&citation_for_view=M55IkjEAAAAJ:2osOgNQ5qMEC"
+                target="_blank"
+                rel="noopener noreferrer">
+
                 Google Scholar →
+
             </a>
 
         </div>
 
-    </div>
+    </article>
 
 
-    <!-- Publication 03 -->
 
-    <div class="publication">
+    <!-- PUBLICATION 03 -->
 
-        <span>03</span>
+    <article class="publication reveal">
+
+        <span class="publication-number">
+            03
+        </span>
+
 
         <div>
 
             <h3>
-                Evaluating Reification with Multi-valued Properties in a Knowledge Graph of Licensed Educational Resources
+                Evaluating Reification with Multi-valued Properties in a
+                Knowledge Graph of Licensed Educational Resources
             </h3>
 
             <p>
-                <strong>M. Kieffer, G. Fakih, P. Serrano-Alvarado</strong>
+                <strong>
+                    M. Kieffer, G. Fakih, P. Serrano-Alvarado
+                </strong>
             </p>
 
             <p>
-                <em>Knowledge Graphs: Semantics, Machine Learning, and Languages —
-                Proceedings of SEMANTiCS</em>, 2023.
+                <em>
+                    Knowledge Graphs: Semantics, Machine Learning, and Languages —
+                    Proceedings of SEMANTiCS
+                </em>,
+                2023.
             </p>
 
             <p>
@@ -531,26 +657,33 @@
                 graphs of licensed educational resources.
             </p>
 
-            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=M55IkjEAAAAJ&citation_for_view=M55IkjEAAAAJ:u5HHmVD_uO8C"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+                href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=M55IkjEAAAAJ&citation_for_view=M55IkjEAAAAJ:u5HHmVD_uO8C"
+                target="_blank"
+                rel="noopener noreferrer">
+
                 Google Scholar →
+
             </a>
 
         </div>
 
-    </div>
+    </article>
 
 </section>
 
 
-<!-- TEACHING -->
 
-<section id="teaching" class="section">
+<!-- =========================
+     TEACHING
+========================= -->
+
+<section id="teaching" class="section reveal">
 
     <div class="section-label">
         05 / Teaching
     </div>
+
 
     <div class="two-column">
 
@@ -562,24 +695,55 @@
 
         <div class="teaching-grid">
 
-            <div>
-                <strong>Algorithms</strong>
-                <span>Licence · Master</span>
+            <div class="reveal">
+
+                <strong>
+                    Algorithms
+                </strong>
+
+                <span>
+                    Licence · Master
+                </span>
+
             </div>
 
-            <div>
-                <strong>Databases</strong>
-                <span>SQL · PostgreSQL · Oracle</span>
+
+            <div class="reveal">
+
+                <strong>
+                    Databases
+                </strong>
+
+                <span>
+                    SQL · PostgreSQL · Oracle
+                </span>
+
             </div>
 
-            <div>
-                <strong>Software Engineering</strong>
-                <span>Licence · Master</span>
+
+            <div class="reveal">
+
+                <strong>
+                    Software Engineering
+                </strong>
+
+                <span>
+                    Licence · Master
+                </span>
+
             </div>
 
-            <div>
-                <strong>Operating Systems</strong>
-                <span>Computer Science</span>
+
+            <div class="reveal">
+
+                <strong>
+                    Operating Systems
+                </strong>
+
+                <span>
+                    Computer Science
+                </span>
+
             </div>
 
         </div>
@@ -590,44 +754,70 @@
 
 
 
-<!-- SKILLS -->
+<!-- =========================
+     SKILLS
+========================= -->
 
-<section class="section grey">
+<section id="skills" class="section grey reveal">
 
     <div class="section-label">
         06 / Skills
     </div>
 
+
     <div class="skills">
 
-        <div>
-            <h3>Programming</h3>
+        <div class="reveal">
+
+            <h3>
+                Programming
+            </h3>
+
             <p>
                 Python · Java · C/C++ · SQL · TypeScript
             </p>
+
         </div>
 
-        <div>
-            <h3>AI & Data</h3>
+
+        <div class="reveal">
+
+            <h3>
+                AI & Data
+            </h3>
+
             <p>
                 LLMs · RAG · NLP · Transformers · Embeddings ·
                 TensorFlow · PyTorch
             </p>
+
         </div>
 
-        <div>
-            <h3>Semantic Web</h3>
+
+        <div class="reveal">
+
+            <h3>
+                Semantic Web
+            </h3>
+
             <p>
                 Knowledge Graphs · RDF · RDF-Star · SPARQL · Ontologies
             </p>
+
         </div>
 
-        <div>
-            <h3>Tools</h3>
+
+        <div class="reveal">
+
+            <h3>
+                Tools
+            </h3>
+
             <p>
                 Git · Linux · Streamlit · LangChain · Apache Jena ·
                 Virtuoso · PostgreSQL
             </p>
+
         </div>
 
     </div>
@@ -636,23 +826,30 @@
 
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
-<section id="contact" class="contact">
+<section id="contact" class="contact reveal">
 
     <p class="eyebrow">
         Let's connect
     </p>
+
 
     <h2>
         Have a research or<br>
         AI project in mind?
     </h2>
 
+
     <p>
         I'm open to research engineering, AI/data and
         postdoctoral opportunities.
     </p>
+
+
+    <!-- Replace YOUR_EMAIL with your real email -->
 
     <a
         href="mailto:YOUR_EMAIL"
@@ -668,6 +865,10 @@
 
 
 
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
     <span>
@@ -680,6 +881,11 @@
 
 </footer>
 
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
 
 <script src="script.js"></script>
 
